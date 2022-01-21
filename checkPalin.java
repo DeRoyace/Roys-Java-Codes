@@ -1,8 +1,5 @@
 import java.util.*;
-
 public class checkPalin {
-    private static Scanner scanner;
-
     public static int isPalin(String s) {
         int len = s.length();
         if (s.charAt(0) == s.charAt(len - 1) && len > 1) {
@@ -15,13 +12,13 @@ public class checkPalin {
     }
 
     public static void main(String[] args) {
-        scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.print("\nEnter any Word: ");
-        String w = scanner.next();
+        String w = sc.next();
         if (isPalin(w) == 1)
             System.out.println("Palindromic Word.");
         else
             System.out.println("Not a Palindromic Word.");
-        System.out.close();
+        sc.close();
     }
 }
