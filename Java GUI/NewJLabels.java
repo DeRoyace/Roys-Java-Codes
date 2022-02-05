@@ -1,11 +1,12 @@
-// staus: to be continue...
-
-
+// Bro Code - Java GUI :  2.labels
 import java.awt.Color;
 import java.awt.Font;
+
+import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.border.Border;
 
 public class NewJLabels
 {
@@ -21,7 +22,7 @@ public class NewJLabels
          Image-only labels are horizontally centered, by default.
          */
         ImageIcon img=new ImageIcon("Roys Codes logo.png");
-
+        Border bor=BorderFactory.createLineBorder(Color.cyan, 10);
 
         JLabel label=new JLabel();
         label.setIcon(img);
@@ -35,14 +36,21 @@ public class NewJLabels
         label.setFont(new Font("", Font.ITALIC, 25)); // sets font style, type, and size
         label.setBackground(new Color(214, 0, 7)); // sets bg color
         label.setOpaque(true); // makes bg color visible
-
+        label.setBorder(bor); // sets border to the label
+        label.setVerticalAlignment(JLabel.CENTER); // sets pos of both text & image
+        label.setHorizontalAlignment(JLabel.CENTER); // sets pos of both text & image
+        // label.setBounds(80, 30, 600, 600); // sets (x-axis, y-axis, width, height)
+        // NOTE: setBounds(x, y, width, height); work only when frame setLayout manager is kept null
+        
 
         JFrame frame=new JFrame();
         frame.setTitle("2. New JLabels");
-        frame.setSize(700,700); 
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        // frame.setSize(700,700); 
         frame.add(label);
+        // frame.setLayout(null);
+        frame.pack(); // no need to use setLayout & setSize
 
     }
 }
