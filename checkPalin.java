@@ -1,6 +1,8 @@
 import java.util.*;
-public class checkPalin {
-    public static int isPalin(String s) {
+public class checkPalin 
+{
+    public static int isPalin(String s) // recursive function to check Plaindromic String
+    {
         int len = s.length();
         if (s.charAt(0) == s.charAt(len - 1) && len > 1) {
             if (len == 2 || len == 3)
