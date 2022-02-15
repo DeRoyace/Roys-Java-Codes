@@ -14,6 +14,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class GuessTheNum {
     static int random, guess, count;
+    Scanner sc;
 
     GuessTheNum()
     {
@@ -23,7 +24,7 @@ public class GuessTheNum {
 
     void accept()
     {
-        Scanner sc=new Scanner(System.in);
+        sc=new Scanner(System.in);
         System.out.print("\nGuess any number between 1 to 100 : ");
         guess=sc.nextInt();
     }
