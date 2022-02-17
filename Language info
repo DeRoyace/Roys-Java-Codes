@@ -1,0 +1,22 @@
+JAVA : High level Programming Language based Object Oriented Programming (OOPs) 
+
+Note: OOP emphasize on DATA PROTECTION
+
+Core java- application and oop
+Advance java- servlets applets
+
+Multiuser System
+Platform independent
+
+1) Source Code: .java
+2) Byte Code: .class
+3) Executable Code: depends on OS E.g .ctxt in windows
+
+(1) compile -- (2) Interpreter -- (3)
+
+cmd to compile ur java file   :  javac filename.java 
+cmd to run ur java program    :  java filename
+cmd to compile all java files :  javac *.java
+
+My abbreviations:
+CLA: Command Line Arguments
