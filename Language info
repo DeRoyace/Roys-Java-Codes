@@ -10,9 +10,9 @@ Platform independent
 
 1) Source Code: .java
 2) Byte Code: .class
-3) Executable Code: depends on OS E.g .ctxt in windows
+3) Executable Code: depends on OS E.g .ctxt in windows via Bluej IDE/ Notepad
 
-(1) compile -- (2) Interpreter -- (3)
+(1) compile --> (2) Interpreter --> (3)
 
 cmd to compile ur java file   :  javac filename.java 
 cmd to run ur java program    :  java filename
