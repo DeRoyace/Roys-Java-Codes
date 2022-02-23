@@ -1,12 +1,17 @@
-JAVA : High level Programming Language based on Object Oriented Programming (OOPs) 
+-----------------------------------------
+              NOTES & INFO
+-----------------------------------------
 
-Note: OOP emphasize on DATA PROTECTION
+JAVA:  
+  - High level Programming Language based on Object Oriented Programming (OOPs) 
+  - Multiuser System
+  - Platform independent
+
+Note: OOP emphasizes on DATA PROTECTION and code reusability.
 
 Core java- application and oop
 Advance java- servlets applets
 
-Multiuser System
-Platform independent
 
 1) Source Code: .java
 2) Byte Code: .class
@@ -15,8 +20,12 @@ Platform independent
 (1) compile --> (2) Interpreter --> (3)
 
 cmd to compile ur java file   :  javac filename.java 
-cmd to run ur java program    :  java filename
+cmd to run ur java program    :  java classname
 cmd to compile all java files :  javac *.java
+
+NOTE: 
+A filename and classname can be different but in that case the classname cannot be made public.
+But we mainly do classname same as filename such that user don't need to get the source code to see the classname and then execute the code via cmds.
 
 My abbreviations:
 CLA: Command Line Arguments
