@@ -20,3 +20,9 @@ class Basics
         B subObj = new B();
     }
 }
+
+/**
+Output:
+Super-class A is called...
+Sub-class B is called...
+*/
