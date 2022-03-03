@@ -7,6 +7,7 @@
  * 
  * Super Class: A
  * Sub-class of A are: B, C and D
+ * Type: Hiearchical Inheritance
  */
 
 class A  // Super-class
