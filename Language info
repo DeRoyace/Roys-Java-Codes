@@ -12,6 +12,18 @@ Note: OOP emphasizes on DATA PROTECTION and code reusability.
 Core java- application and oop
 Advance java- servlets applets
 
+JDK - Java Development Kit is a bundle of software development tools used for building various Java apllications such as, servlets, applets
+      And also, for compiling, debugging and executing Java programs.
+      It contain JRE to execute the software.
+      
+JRE - Java Runtime Environment. It is used to execute java programs.
+      JRE is made up of JVM
+
+JVM - Java Virtual Machine. 
+      It is an integral part of JRE
+      It executes the java programs
+      JVM is platform dependent
+      It translates the byte code ( .class files ) into an executable code. This executable code is different in different platforms or OS.
 
 1) Source Code: .java
 2) Byte Code: .class
