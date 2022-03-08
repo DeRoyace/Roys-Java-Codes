@@ -3,7 +3,7 @@
  * Super can be used to invoke Super Class Constructor.
  * Super can be also used as a reference variable.
  * 
- * NOTE: Super statement to invoke super class constructor must be the first statement inside the sub class constructor.
+ * NOTE: To invoke super class constructor, Super statement (i.e. super(...)) must be the first statement inside the sub class constructor.
  * 
  * Super Class: A
  * Sub-class of A are: B, C and D
