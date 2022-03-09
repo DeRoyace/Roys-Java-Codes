@@ -1,3 +1,10 @@
+/**
+ * A program to demonstrate the usage of Abstract class
+ * An 
+ * This program contains an abstract super class: Area
+ * An abstract method is defined and overriden in sub-classes: Rectangle, Square & Circle.
+ * Type: Hiearchical inheritance
+ */
 abstract class Area {
     String shape; // stores the 2D-shape name
     Area(String shape)
