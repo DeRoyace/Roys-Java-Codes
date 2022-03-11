@@ -10,7 +10,7 @@ public class Garbage {
         System.out.println(str);
         str = null; // 
         Garbage g = new Garbage();
-        System.out.println(g);
+        System.out.println(g); // displays the hashcode (in hexadecimal) value of the class object
         g = null; // making the class object null
         System.out.println(g); // null
         System.gc(); // invoking garbage collection (GC)
