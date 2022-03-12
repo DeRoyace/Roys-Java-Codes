@@ -17,6 +17,11 @@ class A  // Super-class
 {
     private int i;
     int a, b;
+    A()
+    {
+        System.out.println("------------------------------------------");
+        System.out.println("Constructor of Super class A is invoked...");
+    }
     A(int i)
     {
         System.out.println("------------------------------------------");
@@ -48,7 +53,7 @@ class B extends A
         j = 74;
     }
     
-    void show()
+    void show() // overriding show() function
     {
         System.out.println("j = " + j);
         /**
@@ -91,30 +96,54 @@ class D extends A
     }
 
     int sum()
-    {   // we are using super class variables using super keyword
+    {   
         /* Note: to use super class variables like these (shown below), 
-        the super class variables must not be private, otherwise there will be an error. */
-        return super.a + super.b + c;
+        the super class variables must not be private, otherwise there will be an error.
+        * Also, if we have invoked super class constructor in sub-class constructor then we don't need to write super.VariableName for using super class variables.
+        */
+        return super.a + super.b + c; // using super as reference variable though it was not needed here.
     }
     
-    void show()
+    void show() // overriding show() function
     {
-        System.out.println(super.a + " + " + super.b + " + "+ c + " = " + sum());
+        System.out.println(a + " + " + b + " + "+ c + " = " + sum());
     }
 } // end of sub-class D
+
+class E extends A
+{
+    private int e;
+    E()
+    {
+        System.out.println("Constructor of Sub-class E is invoked...");
+    }
+    void disp()
+    {
+        // i = 50; // error as i is private
+        a=100;
+        b=200;
+        e=300;
+        System.out.println("A = " + a);
+        System.out.println("B = " + b);
+        System.out.println("E = " + e);
+    }
+}
 
 class UseOf_Super // Driver class
 {
     public static void main(String[] args) 
     {
         B objB = new B();
-        objB.show();
+        objB.show(); // calling the show() of class B
         
         C objC = new C(99);
         objC.display();
         
         D objD = new D(7, 8, 6);
         objD.show();
+
+        E objE = new E();
+        objE.disp();
 
         System.out.println("------------------------------------------\n");
     } // end of main
@@ -136,6 +165,12 @@ k = 99
 Constructor of Super class A is invoked...
 Constructor of Sub-class D is invoked...
 7 + 8 + 6 = 21
+------------------------------------------
+Constructor of Super class A is invoked...
+Constructor of Sub-class E is invoked...
+A = 100
+B = 200
+E = 300
 ------------------------------------------
 
 */
