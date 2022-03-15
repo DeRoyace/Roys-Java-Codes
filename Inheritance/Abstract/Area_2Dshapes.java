@@ -121,12 +121,12 @@ class Area_2Dshapes // Driver class
         /** NOTE:
          * Dynamic method dispatch is a concept by which the Java determines (or decides) which version of an overriden method will be executed.
          * this method implements run-time polymorphism,
-         * as it resolves the calls of overriding methods at runt time.
-         * Here show method is overriden in all the sub classes
+         * as it resolves the calls of overriding methods at run time.
+         * Here, the show() method is overriden in all the sub classes
          * By making referrence of class Area we are referring to other classes;
          * in order to implement Dynamic Method Dispatch
          */ 
-        Area a;
+        Area a; // creating a reference of class Area as 'a'
         System.out.println("-------------------------------------");
         a = new Square(6); // a is referring to class Square's object
         a.show(); // calling the show() of Square class
