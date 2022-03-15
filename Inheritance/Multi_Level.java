@@ -90,3 +90,24 @@ class Multi_Level {
 
     }
 }
+
+/**
+ * OUTPUT:
+Class A: 
+A: 12
+----------
+Class B: 
+B: 56
+A: 45
+----------
+Class C: 
+C: 89
+B: 67
+A: 70
+----------
+Class D: 
+D: 100
+C: 99
+B: 98
+A: 90
+ */
