@@ -1,7 +1,7 @@
 package myPack2;
 
 public class Base {
-    void foo()
+    public static void foo()
     {
         System.out.println("INSIDE BASE CLASS function foo().");
     }
