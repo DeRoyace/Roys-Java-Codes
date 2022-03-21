@@ -39,5 +39,7 @@ NOTE:
 A filename and classname can be different but in that case the classname cannot be made public.
 But we mainly do classname same as filename such that user don't need to get the source code to see the classname and then execute the code via cmds.
 
-My abbreviations:
 CLA: Command Line Arguments
+java className "argument 1" "argument 2"
+OR java className this is an argument.
+Like these we pass CLA in terminals.
