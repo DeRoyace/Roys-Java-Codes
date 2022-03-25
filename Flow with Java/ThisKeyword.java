@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 class UsingThis {
     private int a = 4;
     private int b = 1;
