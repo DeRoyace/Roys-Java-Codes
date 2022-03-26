@@ -1,5 +1,5 @@
 /**
- * Write a program in Java to input 2 dimensional arrays a[][] and b[][] and calculate product of 2-dimentional array.
+ * Write a program in Java to input 2 dimensional arrays arr[][] and brr[][] and calculate product of 2-dimentional array.
  */
 
 import java.io.*;
