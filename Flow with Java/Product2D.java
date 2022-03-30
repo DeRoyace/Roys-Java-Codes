@@ -18,7 +18,7 @@ public class Product2D
 	void input(int a[][]) throws IOException
 	{
 		InputStreamReader isr = new InputStreamReader(System.in);
-                BufferedReader br = new BufferedReader(isr);
+        BufferedReader br = new BufferedReader(isr);
 		
 		for(int i = 0; i < a.length; i++)
 		{
