@@ -14,7 +14,8 @@ public class FileReaderExample {
             }
             br.close();
             fr.close();
-        } catch (Exception e) {
+        } 
+        catch (Exception e) {
             System.out.println(e);
         }
         System.out.println("Success...");

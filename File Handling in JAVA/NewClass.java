@@ -19,7 +19,8 @@ public class NewClass {
             // Closing BufferWriter to end operation
             bufferwrite.close();
             System.out.println("Written successfully");
-        } catch (IOException excpt) {
+        } 
+        catch (IOException excpt) {
             excpt.printStackTrace();
         }
 

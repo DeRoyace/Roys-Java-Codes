@@ -7,7 +7,8 @@ public class FileWriterExample {
             FileWriter fw = new FileWriter("testout.txt");
             fw.write("Welcome to the world of JAVA programming");
             fw.close();
-        } catch (Exception e) {
+        } 
+        catch (Exception e) {
             System.out.println(e);
         }
         System.out.println("Success...");
