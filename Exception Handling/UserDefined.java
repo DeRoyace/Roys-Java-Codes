@@ -26,11 +26,17 @@ class UserDefined
 				System.out.printf("\nEnter Numerator %d   : ", (i+1));
 				n = Integer.parseInt(br.readLine());
 				if(n < 0)
+				{
+					i--;
 					throw new NegativeNumberException();
+				}
 				System.out.printf("Enter Denominator %d : ", (i+1));
                                 d = Integer.parseInt(br.readLine());
                                 if(d == 0)
-                                        throw new ArithmeticException();
+				{
+					i--;
+					throw new ArithmeticException();
+				}
 				Numerator[i] = n;
 				Denominator[i] = d;
 			}
