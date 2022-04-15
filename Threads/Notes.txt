@@ -1,0 +1,10 @@
+We are all familiar with multi-tasking as it does in all modern OS. Multi-tasking means doing different tasks at a time. 
+  There exists two distinct types of Multi-tasking:
+	- Process Based
+	- Thread Based
+
+Process based multi-tasking : this makes your device to run multiple programs concurrently. Here, a program is the smallest unit of dispatchable code. Example, you are watching a tutorial video in your browser, and at the same time your are taking notes in a text editor of the same device.
+
+Thread based multi-tasking : this makes a single program to perform multiple tasks simultaneously. Here, thread is the smallest unit of dispatchable code. Example, in a word processor we are typing something which is one thread and at the same time the contents are getting autosaved (another thread).
+
+
