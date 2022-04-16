@@ -3,8 +3,27 @@ We are all familiar with multi-tasking as it does in all modern OS. Multi-taskin
 	- Process Based
 	- Thread Based
 
-Process based multi-tasking : this makes your device to run multiple programs concurrently. Here, a program is the smallest unit of dispatchable code. Example, you are watching a tutorial video in your browser, and at the same time your are taking notes in a text editor of the same device.
+Process based multi-tasking : this makes your device to run multiple programs concurrently. Here, a program is the smallest unit of dispatchable code. Example, you are watching a tutorial video in your browser, and at the same time your are taking notes in a text editor of the same device. The process can have the following states new, ready, running, waiting, terminated, and suspended. A process can create other processes which are known as Child Processes. Changes to the parent process do not affect child processes.
 
-Thread based multi-tasking : this makes a single program to perform multiple tasks simultaneously. Here, thread is the smallest unit of dispatchable code. Example, in a word processor we are typing something which is one thread and at the same time the contents are getting autosaved (another thread).
+Thread based multi-tasking : this makes a single program to perform multiple tasks simultaneously. Here, thread is the smallest unit of dispatchable code. Example, in a word processor we are typing something which is one thread and at the same time the contents are getting autosaved (another thread). A thread has three states: Running, Ready, and Blocked. 
+Threads share same memory space/ address. Since all threads of the same process share address space and other resources so any changes to the main thread may affect the behavior of the other threads of the process.
 
+Thus, we can conclude that process deals with a 'big picture' and thread handles the details.
+
+ # Points of Differences:
+	1. Thread requires less overhead then processes.
+	2. Threads are lightweight while processes are heavyweight as they need their own address space.
+	3. Thread takes less time to terminate as compared to the process.
+	4. Interthread communication is inexpensive, while interprocess communication is expensive.
+	5. Context switching from one thread to another is lower in cost as compared to process.
+	6. Thread takes less time in context switching while Process takes more time.
+	7. Threads share same memory while processes are isolated.
+	8. Thread based multi-tasking is under Java's direct control while process based multi-tasking is not.
+
+Q. How to create a thread ?
+Ans: Thread can be created via two different ways:
+    - by extending the Thread class
+    - by implementing the Runnable interface
+
+Thread class present in lang package i.e., java.lang.Thread;
 
