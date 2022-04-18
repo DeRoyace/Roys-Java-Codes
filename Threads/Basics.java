@@ -23,10 +23,12 @@ class Basics
 		 String NewName = Thread.currentThread().getName();
 		 System.out.println("Name of the current thread: " + NewName);
 
-		 //Thread Priority:
-		 //Minimum Priority  - 1
-		 //Normal Priority   - 5
-		 //Maximum priority  - 10
+		 // Thread Priorities:
+		 // Java assigns to each thread a priority that determines how that thread should be treated wrt others.
+		 // Thread priority is used to decide when to switch from one running thread to the next thread. This is called a context switching.
+		 // Minimum Priority  - 1
+		 // Normal Priority   - 5
+		 // Maximum priority  - 10
 		 System.out.println("Priority of the current thread: " + Thread.currentThread().getPriority());
 		 Thread.currentThread().setPriority(7);
 		 System.out.println("Updated Thread priority: " + Thread.currentThread().getPriority());
