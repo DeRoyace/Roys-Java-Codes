@@ -1,10 +1,10 @@
 class NewThread extends Thread
 {
 	// creating thread by extending Thread class
-	String ThreadName;
-	NewThread( String ThreadName)
+	String threadName;
+	NewThread( String threadName)
 	{
-		this.ThreadName = ThreadName;
+		this.threadName = threadName;
 	}
 
 	public void run()
@@ -12,7 +12,7 @@ class NewThread extends Thread
 		try{
 			for(int i = 1; i<=10; i++)
 			{
-				System.out.println(ThreadName + " : " + i);
+				System.out.println(threadName + " : " + i);
 				Thread.sleep(500);
 			}
 		}
@@ -20,19 +20,19 @@ class NewThread extends Thread
 		{
 			System.out.println(e);
 		}
-		System.out.println(ThreadName + " is finished...");
+		System.out.println(threadName + " is finished...");
 	}
 }
 
 class MyThread implements Runnable
 {
 	// creating thread by implementing Runnable interface
-	String ThreadName;
+	String threadName;
 	Thread t;
-	MyThread( String ThreadName)
+	MyThread( String threadName)
 	{
-		this.ThreadName = ThreadName;
-		t = new Thread(this, ThreadName);
+		this.threadName = threadName;
+		t = new Thread(this, threadName);
 		System.out.println("New Thread: " + t);
 		t.start();
 	}
@@ -42,7 +42,7 @@ class MyThread implements Runnable
 		try{
 			for(int i = 1; i<=10; i++)
 			{
-				System.out.println(ThreadName + " : " + i);
+				System.out.println(threadName + " : " + i);
 				Thread.sleep(500);
 			}
 		}
@@ -50,7 +50,7 @@ class MyThread implements Runnable
 		{
 			System.out.println(e);
 		}
-		System.out.println(ThreadName + " is finished...");
+		System.out.println(threadName + " is finished...");
 	}
 }
 
@@ -58,7 +58,6 @@ class CreateThreads
 {
 	public static void main(String args[])
 	{
-		
 		NewThread t1 = new NewThread("Thread 1");
 		NewThread t2 = new NewThread("Thread 2");
         t1.start();
