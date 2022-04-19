@@ -32,7 +32,7 @@ class MyThread implements Runnable
 	MyThread( String ThreadName)
 	{
 		this.ThreadName = ThreadName;
-		t = new Thread(this.ThreadName);
+		t = new Thread(this, ThreadName);
 		System.out.println("New Thread: " + t);
 		t.start();
 	}
@@ -74,26 +74,48 @@ class CreateThreads
  * 
 New Thread: Thread[One,5,main]
 New Thread: Thread[Two,5,main]
-Thread 1 : 1
+Two : 1
 Thread 2 : 1
-Thread 1 : 2
+Thread 1 : 1
+One : 1
+Two : 2
 Thread 2 : 2
-Thread 1 : 3
+Thread 1 : 2
+One : 2
+Two : 3
 Thread 2 : 3
-Thread 1 : 4
+Thread 1 : 3
+One : 3
+Two : 4
 Thread 2 : 4
-Thread 1 : 5
+Thread 1 : 4
+One : 4
+Two : 5
 Thread 2 : 5
-Thread 1 : 6
+Thread 1 : 5
+One : 5
+Two : 6
 Thread 2 : 6
-Thread 1 : 7
+Thread 1 : 6
+One : 6
+Two : 7
 Thread 2 : 7
-Thread 1 : 8
+Thread 1 : 7
+One : 7
+Two : 8
 Thread 2 : 8
-Thread 1 : 9
+Thread 1 : 8
+One : 8
+Two : 9
 Thread 2 : 9
-Thread 1 : 10
+Thread 1 : 9
+One : 9
+Two : 10
 Thread 2 : 10
-Thread 1 is finished...
+Thread 1 : 10
+One : 10
+Two is finished...
 Thread 2 is finished...
+One is finished...
+Thread 1 is finished...
  */
