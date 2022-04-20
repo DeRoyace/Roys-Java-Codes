@@ -34,6 +34,7 @@ class SORT
 					arr[j+1] = temp;
 				}
 			}
+			display();
 		}
 	}
 
@@ -50,7 +51,26 @@ class SORT
 					arr[j] = temp;
 				}
 			}
+			display();
 		}
+	}
+
+	static void selection()
+	{
+		for(int i = 0; i < N-1; i++)
+		{
+			int pos = i;
+			for(int j = i+1; j < N; j++)
+			{
+				if(arr[j] > arr[pos])
+					pos = j;
+			}
+			int temp = arr[i];
+			arr[i] = arr[pos];
+			arr[pos] = temp;
+			display();
+		}
+
 	}
 
 	static void choice()
@@ -58,6 +78,7 @@ class SORT
 		Scanner sc = new Scanner(System.in);
 		System.out.println("A : Insertion Sort");
 		System.out.println("B : Bubble Sort");
+		System.out.println("C : Selection Sort");
 		System.out.print("Enter your choice: ");
 		char ch = sc.next().charAt(0);
 		switch(ch)
@@ -67,6 +88,9 @@ class SORT
 				break;
 			case 'B':
 				bubble();
+				break;
+			case 'C':
+				selection();
 				break;
 			default:
 				System.out.println("Invalid choice!\nEnter again: ");
@@ -94,3 +118,68 @@ class SORT
 		display();
 	}
 }
+
+/*
+ * OUTPUT 1:
+Enter size of 1D-array : 6
+Enter array elements:
+14
+78
+23
+99
+65
+190
+Original array: 14  78  23  99  65  190
+A : Insertion Sort
+B : Bubble Sort
+C : Selection Sort
+Enter your choice: B
+78  23  99  65  190  14
+78  99  65  190  23  14
+99  78  190  65  23  14
+99  190  78  65  23  14
+190  99  78  65  23  14
+Sorted matrix: 190  99  78  65  23  14
+
+ * OUTPUT 2:
+Enter size of 1D-array : 6
+Enter array elements:
+25
+64
+90
+7
+97
+43
+Original array: 25  64  90  7  97  43
+A : Insertion Sort
+B : Bubble Sort
+C : Selection Sort
+Enter your choice: A
+64  25  90  7  97  43
+90  64  25  7  97  43
+90  64  25  7  97  43
+97  90  64  25  7  43
+97  90  64  43  25  7
+Sorted matrix: 97  90  64  43  25  7
+
+ * OUTPUT 3:
+Enter size of 1D-array : 6
+Enter array elements:
+34
+25
+90
+56
+78
+97
+Original array: 34  25  90  56  78  97
+A : Insertion Sort
+B : Bubble Sort
+C : Selection Sort
+Enter your choice: C
+97  25  90  56  78  34
+97  90  25  56  78  34
+97  90  78  56  25  34
+97  90  78  56  25  34
+97  90  78  56  34  25
+Sorted matrix: 97  90  78  56  34  25
+*/
