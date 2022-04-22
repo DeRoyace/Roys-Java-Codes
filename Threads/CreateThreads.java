@@ -32,9 +32,9 @@ class MyThread implements Runnable
 	MyThread( String threadName)
 	{
 		this.threadName = threadName;
-		t = new Thread(this, threadName);
+		t = new Thread(this, threadName); // instantiating the user defined thread
 		System.out.println("New Thread: " + t);
-		t.start();
+		t.start(); // read to run the thread
 	}
 
 	public void run()
@@ -43,7 +43,7 @@ class MyThread implements Runnable
 			for(int i = 1; i<=10; i++)
 			{
 				System.out.println(threadName + " : " + i);
-				Thread.sleep(500);
+				Thread.sleep(500); // blocking for 0.5s
 			}
 		}
 		catch(InterruptedException e)
@@ -60,7 +60,7 @@ class CreateThreads
 	{
 		NewThread t1 = new NewThread("Thread 1");
 		NewThread t2 = new NewThread("Thread 2");
-        t1.start();
+                t1.start();
 		t2.start();
 
 		new MyThread("One");
