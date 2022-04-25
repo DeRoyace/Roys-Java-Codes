@@ -7,9 +7,9 @@ We are all familiar with multi-tasking as it does in all modern OS. Multi-taskin
 	- Process Based
 	- Thread Based
 
-Process based multi-tasking (or multiprocessing): this makes your device to run multiple programs concurrently. Here, a program is the smallest unit of dispatchable code. Example, you are watching a tutorial video in your browser, and at the same time your are taking notes in a text editor of the same device. The process can have the following states new, ready, running, waiting, terminated, and suspended. A process can create other processes which are known as Child Processes. Changes to the parent process do not affect child processes. 
+Process based multi-tasking (or multiprocessing): this makes your device to run multiple programs concurrently. Here, a program is the smallest unit of dispatchable code. Example, you are watching a tutorial video in your browser, and at the same time your are taking notes in a text editor of the same device. The process can have the following states new, ready, running, waiting, blocked & terminated. A process can create other processes which are known as Child Processes. Changes to the parent process do not affect child processes. 
 
-Thread based multi-tasking (or multithreading): this makes a single program to perform multiple tasks simultaneously. Here, thread is the smallest unit of dispatchable code. Example, in a word processor we are typing something which is one thread and at the same time the contents are getting autosaved (another thread). A thread has three states: Running, Ready, and Blocked. 
+Thread based multi-tasking (or multithreading): this makes a single program to perform multiple tasks simultaneously. Here, thread is the smallest unit of dispatchable code. Example, in a word processor we are typing something which is one thread and at the same time the contents are getting autosaved (another thread). A thread has 5 states: New, Active[Running, Ready], Blocked & Dead. 
 
 Threads share same memory space/ address of the process while process has their own address space. Since all threads of the same process share address space and other resources so any changes to the main thread may affect the behavior of the other threads of the process, wrt to address space only.
 
@@ -38,7 +38,9 @@ Benifit of multithreaded system:
 
 In single threaded systems the execution of subparts of a program is done one by one. This makes the other thread to run only when the currently working thread gets finished. So until the current thread gets over, the next thread in queue cant be executed. This reduces the efficiency of the cpu as the cpu cycles through for every single thread to be executed. Result the program takes time to get executed completely.
 
-To avoid this scenario, we have now the mutithreades systems in our computers. As we can see our CPUs comes with multi-cores. So that each cores will handle different processes of a single program parallely at the same time to make it run faster. This reduecs the inefficiency by preventing the waste of CPU cycles.
+To avoid this scenario, we have now the mutithreades systems in our computers. As we can see our CPUs comes with multi-cores. So that each cores will handle different processes of a single program parallely (at the same time) to make it run faster. This reduecs the inefficiency by preventing the waste of CPU cycles.
+
+Although we can see that single core systems can also run more than one programs, yet comparatively slower than muti-cores. In a core the scenario is such that the program get switch very fast that makes us feel that the programs are running parallely, but actually not. The context switching speeddepends upon the processors. For instance, a single core i5 will do faster context switching than a single core i3 systems.
 
 Suppose we have three threads t1, t2, t3 of a program. So in multithreaded systems this thread will run at the same time provided if each threads are independent of each other. If resources not availabe to make one of the thread to run then the other threads will keep running.
 But in single threaded system we will find that each thread is running at one at a time, and if resources is not available to run the thread then the program stops completely.
