@@ -1,5 +1,4 @@
 import java.util.*;
-
 class Numbers
 {
 	int num;
@@ -98,4 +97,3 @@ class Driver
 		sc.close();
 	}
 }
-		

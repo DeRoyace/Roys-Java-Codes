@@ -25,5 +25,6 @@ class FiboGen
         System.out.print("\nEnter upper limit: ");
         int upp = sc.nextInt();
         genfibos(low, upp);
+        sc.close();
     }
 }
