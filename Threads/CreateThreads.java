@@ -34,7 +34,7 @@ class MyThread implements Runnable
 		this.threadName = threadName;
 		t = new Thread(this, threadName); // instantiating the user defined thread
 		System.out.println("New Thread: " + t);
-		t.start(); // read to run the thread
+		t.start(); // ready to run the thread
 	}
 
 	public void run()
