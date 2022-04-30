@@ -35,6 +35,11 @@ class Keith_o_Prime
 		Scanner sc = new Scanner(System.in);
 		System.out.print("\nEnter any number: ");
 		n = sc.nextInt();
+		if(n >= 9999 || n < 1)
+		{
+			System.out.println("Invalid input\nEnter again: ");
+			store();
+		}	
 		sc.close();
 	}
 
@@ -47,27 +52,47 @@ class Keith_o_Prime
 		}
 		return true;
 	}
-
-	private int sum(int arr[])
+	
+	private int sum(int []arr)
 	{
-		int sum = 0;
+		int sum = 0, i = 0;
+		while(i < arr.length)
+		{
+			sum += arr[i];
+			i++;
+		}
+		return sum;
+	}
+	
+	private int[] proceed(int arr[])
+	{
+		for(int i = 0; i < arr.length; i++)
+		{
+			if(i==0)
+				System.out.print(arr[i]);
+			else
+				System.out.print(" + " + arr[i]);
+
+		}	
+
 		for(int i = 0; i < arr.length-1; i++)
 		{
 			arr[i] = arr[i+1];
-			sum += arr[i];
 		}
-		return sum;
+		return arr;
 	}
 
 	private boolean Keith(int k, int arr[])
 	{
-		if(k > n)
-			return false;
-		else if(k == n)
+		System.out.println(" = " +k);
+		if(k == n)
 			return true;
+		else if(k > n)
+			return false;
 		else
 		{
 			k = sum(arr);
+			arr = proceed(arr);
 			arr[arr.length - 1] = k;
 			return Keith(k, arr);
 		}
@@ -78,23 +103,27 @@ class Keith_o_Prime
 		int num = n;
 		int c = (Integer.toString(n)).length();
 		int arr[] = new int[c];
-		for(int i = 0; i < c; i++)
-		{
-			arr[i] = num%10;
+		while(num > 0) {
+			arr[c-1] = num % 10;
 			num/=10;
+			c--;
 		}
 		if( Keith(0, arr) && prime())
+		{
+			System.out.println(n + " is a Keith-o-Prime number.");
 			return true;
-			System.out.print(n + " is Keith-o-Prime number.");
+		}
 		else
+		{
 			System.out.println("Not a Keith-o-Prime number.");
+			return false;
+		}
 	}
 
-	public static void main()
+	public static void main(String []args)
 	{
 		Keith_o_Prime kop = new Keith_o_Prime();
 		kop.store();
 		kop.checkNumber();
 	}
-
 }
