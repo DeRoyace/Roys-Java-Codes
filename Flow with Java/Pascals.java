@@ -30,6 +30,6 @@ public class Pascals
             }
             System.out.println();
         }
-
+        sc.close();
     }
 }

@@ -19,6 +19,7 @@ class SET_OPERATION
 		{
 			arr[i] = sc.nextInt();
 		}
+		sc.close();
 	}
 
 	static void Union(int arr[], int brr[])

@@ -15,10 +15,11 @@ class StringSort
 		N = sc.nextInt();
 		new StringSort();
 		System.out.println("Enter words: ");
-	    for(int i = 0; i < N; i++)
+		for(int i = 0; i < N; i++)
 		{
 			arr[i] = sc.next();
 		}
+		sc.close();
 	}
 
 	static void getSent()
@@ -27,6 +28,7 @@ class StringSort
 		System.out.print("\nEnter any sentence: ");
 		String s = sc.nextLine();
 		fillArr(s);
+		sc.close();
 	}
 
 	static void fillArr(String s)
@@ -83,6 +85,7 @@ class StringSort
 				System.out.println("Invalid choice!");
 				choice();
 		}
+		sc.close();
 	}
 
 	public static void main(String []args)

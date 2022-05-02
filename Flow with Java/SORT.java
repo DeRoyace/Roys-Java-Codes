@@ -19,6 +19,7 @@ class SORT
 		{
 			arr[i] = sc.nextInt();
 		}
+		sc.close();
 	}
 
 	static void bubble()
@@ -96,6 +97,7 @@ class SORT
 				System.out.println("Invalid choice!\nEnter again: ");
 				choice();
 		}
+		sc.close();
 	}
 
 	static void display()
@@ -116,6 +118,7 @@ class SORT
 		choice();
 		System.out.print("Sorted matrix: ");
 		display();
+		sc.close();
 	}
 }
 

@@ -12,7 +12,7 @@ Month : February
 OUTPUT :
 
 ----------------------------
-       February 2016
+        February 2016
 ----------------------------
 SUN MON TUE WED THU FRI SAT
 ----------------------------
@@ -57,6 +57,7 @@ public class Calendar
         month=sc.next()+sc.nextLine();
         System.out.print("\nEnter 1st day of "+month+" : ");
         wday=sc.nextLine();
+        sc.close();
     }
 
     static int checkLY(int y)  // function to check Leap Year
@@ -100,7 +101,7 @@ public class Calendar
     void fillCalendar()
     {
         weekDayPos();
-        int k=0,wdpos=wkd,flag=0;
+        int k=0,flag=0;
         for(int i=0;i<5;i++)
         {
             for(int j=0;j<7;j++)
@@ -135,7 +136,6 @@ public class Calendar
         System.out.println("---------------------------------------------------");
         System.out.println("SUN     MON     TUE     WED     THU     FRI     SAT");
         System.out.println("---------------------------------------------------");
-        int k=0;
         for(int i=0;i<5;i++)
         {
             for(int j=0;j<7;j++)
