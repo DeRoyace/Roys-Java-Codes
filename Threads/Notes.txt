@@ -1,3 +1,6 @@
+---------------------------------------
+          THREADS & PROCESSES
+---------------------------------------
 Key terms:
  - Process : It is the execution of a program / currently active program. It is made up of several threads.
  - Thread : It is a single sequence of execution within a program. It is a subprocess.
