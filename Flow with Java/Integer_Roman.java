@@ -3,7 +3,6 @@
  * Q. Integer to Roman number conversion: 
  */
 import java.util.*;
-
 class Integer_Roman 
 {
 	// I = 1, V = 5, X = 10, L = 50, C = 100, D = 500, M = 1000;
@@ -40,7 +39,8 @@ class Integer_Roman
 		return val;
 	}
 
-	static String getRepeat(int x, char r) {
+	static String getRepeat(int x, char r) 
+	{
 		if (x == 1)
 			return r + "";
 		else
@@ -116,10 +116,13 @@ class Integer_Roman
 		Scanner sc = new Scanner(System.in);
 		System.out.print("\nEnter any number between 1 to 3999: ");
 		int num = sc.nextInt();
-		if (num < 1 || num >= 4000) {
-			System.out.println("Out of Range!\nEnter again: ");
+		if (num < 1 || num >= 4000)
+	   	{
+			System.out.print("\nOut of Range!\nEnter again: ");
 			main(args);
-		} else {
+		} 
+		else
+	   	{
 			System.out.println(num + " in Roman number is: " + Int_R(num));
 		}
 		sc.close();
