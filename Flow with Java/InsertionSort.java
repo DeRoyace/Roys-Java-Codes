@@ -13,6 +13,7 @@ class InsertionSort
 		{
 			arr[i] = sc.nextInt();
 		}
+		sc.close();
 	}
 
 	static void sort() // sorting in ascending order

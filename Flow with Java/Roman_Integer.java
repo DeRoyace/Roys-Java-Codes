@@ -65,7 +65,7 @@ class Roman_Integer
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("\nEnter a Roman number between I to M (1 to 1000): ");
+		System.out.print("\nEnter a Roman number between I to MMMCMXCIX (1 to 3999): ");
 		String Rnum = sc.next();
 		int res = RtoInt(Rnum, Rnum.charAt(0), 0);
 		if( res == -1)
@@ -80,3 +80,33 @@ class Roman_Integer
 		sc.close();
 	}
 }
+
+/**
+ * OUTPUT:
+rohit@rohit-HP-Notebook:/rohit/Desktop/My codes/Java in VSC/Flow with Java$ javac Roman_Integer.java
+rohit@rohit-HP-Notebook:/rohit/Desktop/My codes/Java in VSC/Flow with Java$ java Roman_Integer
+
+Enter a Roman number between I to MMMCMXCIX (1 to 3999): CDXXV
+CDXXV = 425
+rohit@rohit-HP-Notebook:/rohit/Desktop/My codes/Java in VSC/Flow with Java$ java Roman_Integer
+
+Enter a Roman number between I to MMMCMXCIX (1 to 3999): LXXXIX
+LXXXIX = 89
+rohit@rohit-HP-Notebook:/rohit/Desktop/My codes/Java in VSC/Flow with Java$ java Roman_Integer
+
+Enter a Roman number between I to MMMCMXCIX (1 to 3999): MDCXX
+MDCXX = 1620
+rohit@rohit-HP-Notebook:/rohit/Desktop/My codes/Java in VSC/Flow with Java$ java Roman_Integer
+
+Enter a Roman number between I to MMMCMXCIX (1 to 3999): MMDCCIX
+MMDCCIX = 2709
+rohit@rohit-HP-Notebook:/rohit/Desktop/My codes/Java in VSC/Flow with Java$ java Roman_Integer
+
+Enter a Roman number between I to MMMCMXCIX (1 to 3999): XXCQ
+
+Invalid Input
+Enter again: 
+Enter a Roman number between I to MMMCMXCIX (1 to 3999): MXX
+MXX = 1020
+rohit@rohit-HP-Notebook:/rohit/Desktop/My codes/Java in VSC/Flow with Java$ 
+ */

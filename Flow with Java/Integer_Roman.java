@@ -1,4 +1,3 @@
-
 /**
  * Q. Integer to Roman number conversion: 
  */
@@ -128,3 +127,30 @@ class Integer_Roman
 		sc.close();
 	}
 }
+
+/**
+ * OUTPUTS:
+
+rohit@rohit-HP-Notebook:/rohit/Desktop/My codes/Java in VSC/Flow with Java$ javac Integer_Roman.java
+rohit@rohit-HP-Notebook:/rohit/Desktop/My codes/Java in VSC/Flow with Java$ java Integer_Roman
+
+Enter any number between 1 to 3999: 786
+786 in Roman number is: DCCLXXXVI
+rohit@rohit-HP-Notebook:/rohit/Desktop/My codes/Java in VSC/Flow with Java$ java Integer_Roman
+
+Enter any number between 1 to 3999: 2022
+2022 in Roman number is: MMXXII
+rohit@rohit-HP-Notebook:/rohit/Desktop/My codes/Java in VSC/Flow with Java$ java Integer_Roman
+
+Enter any number between 1 to 3999: 98
+98 in Roman number is: XCVIII
+rohit@rohit-HP-Notebook:/rohit/Desktop/My codes/Java in VSC/Flow with Java$ java Integer_Roman
+
+Enter any number between 1 to 3999: 5600
+
+Out of Range!
+Enter again: 
+Enter any number between 1 to 3999: 3750
+3750 in Roman number is: MMMDCCL
+rohit@rohit-HP-Notebook:/rohit/Desktop/My codes/Java in VSC/Flow with Java$ 
+ */
