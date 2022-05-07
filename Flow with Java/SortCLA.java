@@ -1,6 +1,5 @@
 // Q. Write a Java program to sort a list of numbers given as arguments from the command line.
 
-import java.util.*;
 class SortCLA
 {
 	static void sort(String arr[]) // sorting in ascending order
