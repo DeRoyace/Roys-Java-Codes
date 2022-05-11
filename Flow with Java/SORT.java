@@ -19,7 +19,6 @@ class SORT
 		{
 			arr[i] = sc.nextInt();
 		}
-		sc.close();
 	}
 
 	static void bubble()
@@ -71,7 +70,6 @@ class SORT
 			arr[pos] = temp;
 			display();
 		}
-
 	}
 
 	static void choice()
