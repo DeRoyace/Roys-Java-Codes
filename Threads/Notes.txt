@@ -22,6 +22,9 @@ Life cycle of thread in brief:
 	- A thread can be blocked if all the resources not available beforehand.
 	- A thread can be terminated any time, from any state using stop(), and it cannot be resumed then.
 
+We also have sleep(n) to make the thread in block state for n milliseconds.
+yield() - it is used to explicity switch the control from running to ready state.
+
 Threads share same memory space/ address of the process while process has their own address space. Since all threads of the same process share address space and other resources so any changes to the main thread may affect the behavior of the other threads of the process, wrt to address space only.
 
 Thus, we can conclude that process deals with a 'big picture' and thread handles the details.
