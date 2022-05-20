@@ -8,11 +8,11 @@ public class Garbage {
         System.out.println("Inside Garbage.main()");
         String str = "something!!";
         System.out.println(str);
-        str = null; // 
+        str = null; // making the string class object refering to nowhere or null
         Garbage g = new Garbage();
         System.out.println(g); // displays the hashcode (in hexadecimal) value of the class object
         g = null; // making the class object null
-        System.out.println(g); // null
+        System.out.println(g);
         System.gc(); // invoking garbage collection (GC)
         System.out.println("end of main()");
     } // end of main()
@@ -37,5 +37,5 @@ Garbage@7344699f
 null
 end of main()
 Overriding finalize method
-rohit@rohit-HP-Notebook:/media/rohit/My drive 1/Desktop/My codes/Java in VSC/Flow with Java$
+rohit@rohit-HP-Notebook:/media/rohit/My codes/Java in VSC/Flow with Java$
  */
