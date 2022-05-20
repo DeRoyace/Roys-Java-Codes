@@ -21,3 +21,9 @@ class StringTest
 		System.out.println("End of main()");
 	}
 }
+
+/*
+OUTPUT:
+s1 and s4 are Equal
+End of main()
+*/

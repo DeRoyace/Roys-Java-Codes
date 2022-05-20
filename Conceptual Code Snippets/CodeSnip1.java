@@ -7,3 +7,12 @@ public class CodeSnip1 {
 		}
 	}
 }
+
+/*
+OUTPUT:
+32
+33
+34
+35
+36
+*/

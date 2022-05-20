@@ -22,6 +22,8 @@ class ConditionalOperator
 
 /*
 OUTPUT:
-Equal
+s1 and s2 are Equal.
+true
+true
 End of main()
 */

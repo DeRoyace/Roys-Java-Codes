@@ -19,3 +19,5 @@ class B extends A
         System.out.println("B");
     }
 }
+
+// OUTPUT: B
