@@ -9,7 +9,7 @@
       - If your method overrides one of its super class's methods, you can invoke the overridden method of super class through the use of super.methodName().
  * 
  * Super Class: A
- * Sub-class of A are: B, C and D
+ * Sub-class of A are: B, C, D and E
  * Type: Hiearchical Inheritance
  */
 
