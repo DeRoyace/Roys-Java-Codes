@@ -28,7 +28,7 @@ abstract class Area {
 
 class Square extends Area
 {
-    double side;
+    private double side;
     Square(double side)
     {
         super("Square");
@@ -50,7 +50,7 @@ class Square extends Area
 
 class Rectangle extends Area
 {
-    double length, breadth;
+    private double length, breadth;
     Rectangle(double length, double breadth)
     {
         super("Rectangle");
@@ -73,7 +73,7 @@ class Rectangle extends Area
 
 class Triangle extends Area
 {
-    double height, base;
+    private double height, base;
     Triangle(double height, double base)
     {
         super("Triangle");
@@ -96,7 +96,7 @@ class Triangle extends Area
 
 class Circle extends Area
 {
-    double radius;
+    private double radius;
     Circle(double radius)
     {
         super("Circle");
@@ -119,7 +119,7 @@ class Area_2Dshapes // Driver class
 {
     public static void main(String[] args) {
         /** NOTE:
-         * Dynamic method dispatch is a concept by which the Java determines (or decides) which version of an overriden method will be executed.
+         * Dynamic method dispatch is a concept by which the Java run-time environment determines (or decides) which version of an overriden method will be executed.
          * this method implements run-time polymorphism,
          * as it resolves the calls of overriding methods at run time.
          * Here, the show() method is overriden in all the sub classes
