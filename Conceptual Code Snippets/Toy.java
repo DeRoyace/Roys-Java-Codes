@@ -6,6 +6,10 @@ public class Toy {
     public void finalizer() {
         System.out.print("clean-");
     }
+    
+    public void finalize() {
+		System.out.println("game-");
+	}
 
     public static void main(String[] fun) {
         Toy car = new Toy();
@@ -16,3 +20,5 @@ public class Toy {
         doll.play();
     }
 }
+
+// OUTPUT : play-play-game-
