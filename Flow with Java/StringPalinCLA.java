@@ -33,4 +33,3 @@ public class StringPalinCLA {
         //     System.out.println(cat+ " -> Not Palindromic");
     }
 }
-
