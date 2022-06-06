@@ -84,13 +84,13 @@ class SET_OPERATION
 		System.out.print("\nEnter size of set-a: ");
 		int n1 = sc.nextInt();
 		set_a = new int[n1];
-		SET_OPERATION s1 = new SET_OPERATION(set_a);
+		new SET_OPERATION(set_a); // object created without using referrence variable
 		// input(set_a);
 		
 		System.out.print("\nEnter size of set-b: ");
         int n2 = sc.nextInt();
 		set_b = new int[n2];
-		SET_OPERATION s2 = new SET_OPERATION(set_b);
+		new SET_OPERATION(set_b);
 		// input(set_b);
 		
 		System.out.print("\n SET A: ");
