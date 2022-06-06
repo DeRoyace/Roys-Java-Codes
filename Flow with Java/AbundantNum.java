@@ -24,7 +24,7 @@ public class AbundantNum
 
     public static void main()
     {
-        Scanner sc=new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.print("\nEnter the lower limit : ");
         int M=sc.nextInt();
         System.out.print("\nEnter the upper limit : ");
@@ -42,5 +42,6 @@ public class AbundantNum
             System.out.println("OUT OF RANGE");
             main();
         }
+        sc.close();
     } // end of main
 } // end of class
