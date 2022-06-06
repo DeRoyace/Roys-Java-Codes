@@ -11,6 +11,16 @@ class A
     {
         System.out.println("Super-class A is called...");
     }
+    
+    public static void func()
+    {
+        System.out.println("Inside Super-class method");
+    }
+
+    public void show()
+    {
+        System.out.println("show() of class A");
+    }
 } // end of super class A
 
 class B extends A
@@ -19,17 +29,36 @@ class B extends A
     {
         System.out.println("Sub-class B is called...");       
     }
+    /**
+     * NOTE:
+     * func() is not overridden rather its hidden by func() in class A
+     * Since func() is static, there is no chance of run time polymorphism.
+     * show() is overridden in class B
+     */
+    public static void func()
+    {
+        System.out.println("Inside Sub-class method");
+    }
+
+    public void show()
+    {
+        System.out.println("Overridden show() in class B");
+    }
 } // end of sub class B
 
 class Basics  // driver class
 {
     public static void main(String[] args) {
         B subObj = new B();
+        subObj.func();
+        subObj.show();
     }
 }
 
 /**
 Output:
-Super-class A is called...
+SSuper-class A is called...
 Sub-class B is called...
+Inside Sub-class method
+Overridden show() in class B
 */
