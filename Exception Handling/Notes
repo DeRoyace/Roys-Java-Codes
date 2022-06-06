@@ -3,7 +3,7 @@
 ---------------------------------------
 
 What is an Exception?
-Ans: An exception is an abnormal condition ( or erroneous encounter) that occurs in the code during program execution.
+Ans: An exception is an abnormal condition ( or erroneous encounter) that occurs in the code either during compilation or execution of a program.
 
 What is Exception handling?
 Ans: Exception handling in Java is a feature that helps users to handle the exception exception occured in the program exceution or at runtime, so that the normal flow of the code can be maintained.
@@ -16,8 +16,9 @@ Classification of Exceptions:
 
  1. Unchecked / Uncaught Exception -
 	These exception occurs when the programmer does not take care of the exception by themselves and gives the runtime environment to handle the exception. 
-	When the Java run time system detects an exceptional condition in the program, it creates a excetion object for that exception and throws it to handle the exception. After getting the information of the exception caught, it is then handled by the default handler and prints a statement describing about the reason for the exception caught in brief and also prints a stack of tree from the point at which the exception occurred; and terminates the program.
+	When the Java run time system detects an exceptional condition in the program, it creates an exception object for that exception and throws it to handle the exception. After getting the information of the exception caught, it is then handled by the default handler and prints a statement describing about the reason for the exception caught in brief and also prints a stack of tree from the point at which the exception occurred; and terminates the program.
 	Example : ArithmeticException, NullPointerException
 	
  2. Checked / Caught Exception - 
 	These are the excetions that are caught at compile time. The compiler needs to check whether the method or any piece of code generates an exception or not, if found then throws and handles the exception.
+	Example: ClassNotFoundException, NoSuchMethodException.
